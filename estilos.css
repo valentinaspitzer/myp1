@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #FEFCF6;
+}
+
+header{
+    display:flex;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size:large;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.navlink {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+.navlink.categoria-actual{
+    font-weight: bold;
+}
+
+#ppal{
+    position: relative;
+}
+
+#arq{
+    font-family: 'Short Stack', cursive;
+    color: #635F51;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 40px;
+    margin-left: 15%;
+    position: relative;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        flex-direction: column;
+    }
+    #arq {
+        font-size: 2rem;
+    }
+    #imagen1{
+        width: 100%;
+    }
+}
+
+.imagen{
+    width: 100%;
+    height: 400px;
+}
+
+#imagen1 {
+    position: absolute;
+    transform: rotate(15deg);
+    margin-left: 230px;
+    top: 20;
+}
+
+#caracteristicas {
+    width: 100%;
+    height: 830px;
+    background-color: #635F51;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-columna {
+    display: flex;
+}
+
+.columna {
+    width:100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.vector{
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    color: #FEFCF6;
+    text-align: center;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #FEFCF6;
+}
+
+#delicias{
+    position:relative;
+}
+
+h4{
+    font-family: 'Short Stack', cursive;
+    font-size: 50px;
+    color:#A78A82;
+    position: absolute;
+    z-index: 1;
+    margin: 50px;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    height: 900px;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: carrusel 20s infinite alternate linear;
+}
+
+@keyframes carrusel {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.slider li{
+    width: 100%;
+    list-style:none;
+}
+
+.slider li img{
+    width:100%;
+}
+
+#cuadrados {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 705px;
+}
+
+.izquierda{
+    background-color: #FEFCF6;
+    width: 50%;
+    text-align: center;
+    color:#635F51;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+
+}
+
+.derecha {
+    background-color: #A78A82;
+    color: #FEFCF6;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100vh;
+    display: flex;
+
+}
+
+#contenedor-cuadrados{
+    margin-top: 50%;
+    align-items: center;
+    align-self: center;
+}
+
+h5{
+    font-family: 'Quicksand', sans-serif;
+    font-size:2rem;
+    text-align: center;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 25px;
+    line-height: 1.5;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boton{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+   }
+
+.boton:hover{
+    background-color:#3D4652;
+    color: #fff;
+}
+   
+.izquierda button{
+       background-color:#635F51;
+       color: #FEFCF6;
+   }
+
+.derecha button{
+    background-color:#FEFCF6;
+    color:#A78A82;
+}
+
+footer{
+    background-color: #3D4652;
+    width: 100%;  
+    height: 175px; 
+    color: #FEFCF6;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.iconos{
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 50px;
+}
